@@ -4,23 +4,79 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Ogani</title>
     <!-- <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Montserrat+Alternates:wght@300&family=Poppins:ital,wght@0,700;1,200&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="./home.css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Montserrat+Alternates:wght@300&family=Poppins:ital,wght@0,700;1,200;1,300;1,500;1,700&display=swap"
+    <link
+      href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Courier+Prime:ital,wght@1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
-    /> -->
+    />
     <script
       src="https://kit.fontawesome.com/bb14fd2e01.js"
       crossorigin="anonymous"
     ></script>
-    
   </head>
   <body>
     <!-- Start header -->
+    <div class="loader">
+      <img src="./icon/Spinner-1s-200px (1).svg" alt="" />
+
+    </div>
+    <!-- // -->
+    <div class="overflow hidden"></div>
+    <div class="popop hidden">
+         <div class="login--container hidden">
+          <h2>Giris</h2>
+          <h3>Saytımıza xoş gəlmisiniz.</h3>
+      <form action="" id="dahil">
+          <p class="nameP">
+              <span><i class="fa-solid fa-user"></i></span>
+               <input required type="text" id="Username" placeholder="Login">
+          </p>
+         <p class="passwordP">
+           <span class="block"><i class="fa-solid fa-lock"></i></span>
+           <input required type="password" id="passwordLog" placeholder="Password">
+           <span class="close eyes"><i class="fa-solid fa-eye-slash"></i></span>
+           <span class="open eyes hidden"><i class="fa-solid fa-eye"></i></span>
+          </p>
+          
+          <div class="good">
+               <label for="">
+              <input  type="checkbox">
+              Remember me
+          </label>
+          <button class="not">Forgot passwor?</button>
+          </div>
+         
+          <button id="buttonLogin" type="submit">Dahil ol</button>
+      
+      </form>
+      
+      </div>
+      <div class="registr hidden">
+        <h2>Registrasiya</h2>
+        <h3>Saytimiza qeydiyat olun</h3>
+          <form action="" id="registrasiya">
+            
+              <ul>
+                  <li class="LoginRegistrI"><label for="">Login: </label><input placeholder="Login" id="Login" type="tel"><i id="LoginRegistrI" class="fa-solid fa-user"></i></li>
+                  <li class="EmailRegistrI"i><label for="">Email: </label><input placeholder="Email dahil edin" id="Email" type="email"><i id="EmailRegistrI" class="fa-solid fa-envelope"></i></li>
+                  
+                  <li class="PaswordRegistrI"><label for="">Pasword:
+                     </label><input placeholder="Password dahil edin" id="Pasword" type="password">
+                    <i id="PaswordRegistrI-1" class="fa-solid fa-lock"></i>
+                    <i id="PaswordRegistrI-2" class="fa-solid fa-eye hidden"></i>
+                    <i id="PaswordRegistrI-3" class="fa-solid fa-eye-slash"></i>
+                  </li>
+                  <li class="Kecid"><label for=""></label><span class="outP">Girise kec</span><input id="regist" type="submit" value="Qeyd ol"></li>
+                  <!-- <li><label for=""></label></li> -->
+              </ul>
+          </form>
+      </div>
+    </div>
+ 
     <header class="header">
       <div class="header__top">
         <div class="container">
@@ -50,7 +106,7 @@
               </ul>
             </div>
             <div>
-              <a><i class="fa-solid fa-user"></i> Login</a>
+              <span class="PopSpan"><i class="fa-solid fa-user"></i><a class="popActiv"> Login</a></span>
             </div>
           </div>
         </div>
@@ -59,24 +115,24 @@
         <div class="buttom--container">
           <ul class="buttom--container__logo">
             <li>
-              <a href=""><img src="./icons/logo.png.webp" alt="" /></a>
+              <a href=""><img src="./icons/logo.png.webp" alt="" ></a>
             </li>
           </ul>
           <ul class="buttom--container__menu">
-            <li class="home"><a href="">Home</a></li>
-            <li><a href="" target="_blank">Shop</a></li>
+            <li class="home"><a href="/home/index.html">Home</a></li>
+            <li><a href="/Shop/index.html">Shop</a></li>
             <div class="pages">
-              <li><a href="">Pages</a></li>
+              <li><a href="#">Pages</a></li>
               <ul class="pages__none">
-                <li><a href="">Shop Details</a></li>
-                <li><a href="">Shoping Chart</a></li>
-                <li><a href="">Check out</a></li>
-                <li><a href="">Blog Details</a></li>
+                <li><a href="/Shop Details/index.html">Shop Details</a></li>
+                <li><a href="/Shoping Card/">Shoping Chart</a></li>
+                <li><a href="/Check out/">Check out</a></li>
+                <li><a href="/Block Details/index.html">Blog Details</a></li>
               </ul>
             </div>
 
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="/Block/index.html">Blog</a></li>
+            <li><a href="/Contact/index.html">Contact</a></li>
           </ul>
           <ul class="buttom--container__item">
             <li>
@@ -191,66 +247,83 @@
         </div>
       </section>
       <div class="filter__photo">
-     <div class="filter__photo--conatiner">
-      <ul>
-        <li>
-          <img
-            src="https://preview.colorlib.com/theme/ogani/img/banner/banner-1.jpg"
-            alt=""
-          />
-        </li>
-        <li>
-          <img
-            src="https://preview.colorlib.com/theme/ogani/img/banner/banner-2.jpg"
-            alt=""
-          />
-        </li>
-      </ul>
-     </div>
+        <div class="filter__photo--conatiner">
+          <ul>
+            <li>
+              <img
+                src="https://preview.colorlib.com/theme/ogani/img/banner/banner-1.jpg"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                src="https://preview.colorlib.com/theme/ogani/img/banner/banner-2.jpg"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
       </div>
       <section class="latest">
         <div class="lts-container">
-           <ul class="lts-texs">
-              <li>
-                <h3>Latest Products</h3>
-              </li>
-              <li>
-                <ul class="lts_button">
-                  <li><button class="lts-prev-1 lts"><i class="fa fa-angle-left"></i></button></li>
-                  <li><button class="lts-next-1 lts"><i class="fa fa-angle-right"></i></button></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="lts-texs">
-              <li><h3>Top Rated Products</h3></li>
-              <li>
-                <ul class="lts_button">
-                  <li><button class="lts-prev-2 lts"><i class="fa fa-angle-left"></i></button></li>
-                  <li><button class="lts-next-2 lts"><i class="fa fa-angle-right"></i></button></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="lts-texs">
-              <li>
-                <h3>Review Products</h3>
-              </li>
-              <li>
-                <ul class="lts_button">
-                  <li><button class="lts-prev-3 lts"><i class="fa fa-angle-left"></i></button></li>
-                  <li><button class="lts-next-3 lts"><i class="fa fa-angle-right"></i></button></li>
-                </ul>
-              </li>
-            </ul>
-          <div class="carousel carousel-1">
-           
-          </div>
-          <div class="carousel carousel-2">
-           
-          </div>
-          <div class="carousel carousel-3">
-            
-          </div>
-
+          <ul class="lts-texs">
+            <li>
+              <h3>Latest Products</h3>
+            </li>
+            <li>
+              <ul class="lts_button">
+                <li>
+                  <button class="lts-prev-1 lts">
+                    <i class="fa fa-angle-left"></i>
+                  </button>
+                </li>
+                <li>
+                  <button class="lts-next-1 lts">
+                    <i class="fa fa-angle-right"></i>
+                  </button>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="lts-texs">
+            <li><h3>Top Rated Products</h3></li>
+            <li>
+              <ul class="lts_button">
+                <li>
+                  <button class="lts-prev-2 lts">
+                    <i class="fa fa-angle-left"></i>
+                  </button>
+                </li>
+                <li>
+                  <button class="lts-next-2 lts">
+                    <i class="fa fa-angle-right"></i>
+                  </button>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="lts-texs">
+            <li>
+              <h3>Review Products</h3>
+            </li>
+            <li>
+              <ul class="lts_button">
+                <li>
+                  <button class="lts-prev-3 lts">
+                    <i class="fa fa-angle-left"></i>
+                  </button>
+                </li>
+                <li>
+                  <button class="lts-next-3 lts">
+                    <i class="fa fa-angle-right"></i>
+                  </button>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="carousel carousel-1"></div>
+          <div class="carousel carousel-2"></div>
+          <div class="carousel carousel-3"></div>
         </div>
       </section>
       <section class="from-block">
@@ -261,7 +334,10 @@
           <div class="from-photo">
             <div class="from-photo-img">
               <div class="from-photo-pic">
-                <img src="https://preview.colorlib.com/theme/ogani/img/blog/blog-1.jpg" alt="">
+                <img
+                  src="https://preview.colorlib.com/theme/ogani/img/blog/blog-1.jpg"
+                  alt=""
+                />
               </div>
               <div class="from-photo-text">
                 <ul>
@@ -277,12 +353,18 @@
                 <h5>
                   <a href="">Cooking tips make cooking simple</a>
                 </h5>
-                <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                <p>
+                  Sed quia non numquam modi tempora indunt ut labore et dolore
+                  magnam aliquam quaerat
+                </p>
               </div>
             </div>
             <div class="from-photo-img">
               <div class="from-photo-pic">
-                <img src="https://preview.colorlib.com/theme/ogani/img/blog/blog-2.jpg" alt="">
+                <img
+                  src="https://preview.colorlib.com/theme/ogani/img/blog/blog-2.jpg"
+                  alt=""
+                />
               </div>
               <div class="from-photo-text">
                 <ul>
@@ -298,12 +380,18 @@
                 <h5>
                   <a href="">6 ways to prepare breakfast for 30</a>
                 </h5>
-                <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                <p>
+                  Sed quia non numquam modi tempora indunt ut labore et dolore
+                  magnam aliquam quaerat
+                </p>
               </div>
             </div>
             <div class="from-photo-img">
               <div class="from-photo-pic">
-                <img src="https://preview.colorlib.com/theme/ogani/img/blog/blog-3.jpg" alt="">
+                <img
+                  src="https://preview.colorlib.com/theme/ogani/img/blog/blog-3.jpg"
+                  alt=""
+                />
               </div>
               <div class="from-photo-text">
                 <ul>
@@ -319,13 +407,15 @@
                 <h5>
                   <a href="">Visit the clean farm in the US</a>
                 </h5>
-                <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                <p>
+                  Sed quia non numquam modi tempora indunt ut labore et dolore
+                  magnam aliquam quaerat
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-
     </main>
     <!-- End Main -->
 
@@ -334,14 +424,19 @@
       <div class="footer__container">
         <div class="footer__logo">
           <div class="footer__logo-name">
-              <img src="https://preview.colorlib.com/theme/ogani/img/logo.png" alt="">
+            <img
+              src="https://preview.colorlib.com/theme/ogani/img/logo.png"
+              alt=""
+            />
           </div>
           <ul>
-            <li>Address: 60-49 Road 11378 <br> New York</li>
+            <li>
+              Address: 60-49 Road 11378 <br />
+              New York
+            </li>
             <li>Phone: +65 11.188.888</li>
             <li>Email: hello@colorlib.com</li>
           </ul>
-          
         </div>
         <div class="footer__widget">
           <h3>Useful Links</h3>
@@ -366,9 +461,12 @@
         </div>
         <div class="footer__right">
           <h3>Join Our Newsletter Now</h3>
-          <p>Get E-mail updates about our latest shop and <br> special offers.</p>
-          <form >
-            <input type="text" placeholder="Enter your mail">
+          <p>
+            Get E-mail updates about our latest shop and <br />
+            special offers.
+          </p>
+          <form>
+            <input type="text" placeholder="Enter your mail" />
             <button type="submit">Subscribe</button>
           </form>
           <div class="footer__right--social">
@@ -387,8 +485,8 @@
           </div>
         </div>
       </div>
-
     </footer>
+    <div class="go--top hidden"><i class="fa-solid fa-apple-whole"></i></div>
     <!-- End footer -->
   </body>
 
@@ -397,4 +495,11 @@
   <!-- Initialize Swiper -->
 
   <script src="./main.js"></script>
+  <script>
+    let loader = document.querySelector(".loader");
+    window.addEventListener("load", () => {
+      loader.style.display = "none";
+    });
+  </script>
+
 </html>

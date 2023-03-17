@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ogani</title>
+    <script
+    src="https://kit.fontawesome.com/bb14fd2e01.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="./Block.css/Block.css">
+  <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Courier+Prime:ital,wght@1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="loader">
+    <img src="./icon/Spinner-1s-200px (1).svg" alt="">
+  </div>
+  <div class="overflow hidden"></div>
+  <div class="popop hidden">
+       <div class="login--container hidden">
+        <h2>Giris</h2>
+        <h3>Saytımıza xoş gəlmisiniz.</h3>
+    <form action="" id="dahil">
+        <p class="nameP">
+            <span><i class="fa-solid fa-user"></i></span>
+             <input required type="text" id="Username" placeholder="Login">
+        </p>
+       <p class="passwordP">
+         <span class="block"><i class="fa-solid fa-lock"></i></span>
+         <input required type="password" id="passwordLog" placeholder="Password">
+         <span class="close eyes"><i class="fa-solid fa-eye-slash"></i></span>
+         <span class="open eyes hidden"><i class="fa-solid fa-eye"></i></span>
+        </p>
+        
+        <div class="good">
+             <label for="">
+            <input  type="checkbox">
+            Remember me
+        </label>
+        <button class="not">Forgot passwor?</button>
+        </div>
+       
+        <button id="buttonLogin" type="submit">Dahil ol</button>
+    
+    </form>
+    
+    </div>
+    <div class="registr hidden">
+      <h2>Registrasiya</h2>
+      <h3>Saytimiza qeydiyat olun</h3>
+        <form action="" id="registrasiya">
+          
+            <ul>
+                <li class="LoginRegistrI"><label for="">Login: </label><input placeholder="Login" id="Login" type="tel"><i id="LoginRegistrI" class="fa-solid fa-user"></i></li>
+                <li class="EmailRegistrI"i><label for="">Email: </label><input placeholder="Email dahil edin" id="Email" type="email"><i id="EmailRegistrI" class="fa-solid fa-envelope"></i></li>
+                
+                <li class="PaswordRegistrI"><label for="">Pasword:
+                   </label><input placeholder="Password dahil edin" id="Pasword" type="password">
+                  <i id="PaswordRegistrI-1" class="fa-solid fa-lock"></i>
+                  <i id="PaswordRegistrI-2" class="fa-solid fa-eye hidden"></i>
+                  <i id="PaswordRegistrI-3" class="fa-solid fa-eye-slash"></i>
+                </li>
+                <li class="Kecid"><label for=""></label><span class="outP">Girise kec</span><input id="regist" type="submit" value="Qeyd ol"></li>
+                <!-- <li><label for=""></label></li> -->
+            </ul>
+        </form>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="contaimer__lef">
+          <ul>
+            <li>
+              <a href=""><i class="fa-sharp fa-solid fa-envelope"></i></a>
+              hello@colorlib.com
+            </li>
+            <li>Free Shipping for all Order of $99</li>
+          </ul>
+        </div>
+        <div class="container__right">
+          <div class="links">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+          <div class="header__top--photo">
+            <img src="./icons/flag.webp" alt="" />
+            <div>English</div>
+            <span><i class="fa-solid fa-chevron-down"></i></span>
+            <ul>
+              <li>Spanish</li>
+              <li>English</li>
+            </ul>
+          </div>
+          <div>
+            <span class="PopSpan"><i class="fa-solid fa-user"></i><a class="popActiv"> Login</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__button">
+      <div class="buttom--container">
+        <ul class="buttom--container__logo">
+          <li>
+            <a href=""><img src="./icons/logo.png.webp" alt="" /></a>
+          </li>
+        </ul>
+        <ul class="buttom--container__menu">
+          <li ><a href="/home/index.html">Home</a></li>
+          <li><a href="/Shop/index.html">Shop</a></li>
+          <div class="pages">
+            <li><a href="#">Pages</a></li>
+            <ul class="pages__none">
+              <li><a href="/Shop Details/index.html">Shop Details</a></li>
+              <li><a href="/Shoping Card/">Shoping Chart</a></li>
+              <li><a href="/Check out/">Check out</a></li>
+              <li><a href="/Block Details/index.html">Blog Details</a></li>
+            </ul>
+          </div>
+
+          <li class="Shop"><a href="/Block/index.html">Blog</a></li>
+          <li><a href="/Contact/index.html">Contact</a></li>
+        </ul>
+        <ul class="buttom--container__item">
+          <li>
+            <a href=""
+              ><i class="fa-solid fa-heart"></i> <sup><span>1</span></sup>
+            </a>
+          </li>
+          <li>
+            <a href=""
+              ><i class="fa-solid fa-cart-shopping"></i>
+              <sup><span>3</span></sup></a
+            >
+          </li>
+          <li class="ml-10">item: <b>$150.00</b></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+      <!-- End header -->
+      <section class="main__top">
+        <div class="main__container">
+          <div class="main__container--left">
+            <div class="main__container--left--categories">
+              <ul class="main__container--left--categories--1">
+                <li><i class="fa-solid fa-bars"></i></li>
+                <li>All departments</li>
+              </ul>
+              <ul class="main__container--left--categories--2">
+                <li><i class="fa-solid fa-chevron-down"></i></li>
+              </ul>
+            </div>
+            <ul class="main__container--left--category hidden">
+              <li><a href="#">Fresh Meat</a></li>
+              <li><a href="#">Vegetables</a></li>
+              <li><a href="#">Fruit & Nut Gifts</a></li>
+              <li><a href="#">Fresh Berries</a></li>
+              <li><a href="#">Ocean Foods</a></li>
+              <li><a href="#">Butter & Eggs</a></li>
+              <li><a href="#">Fastfood</a></li>
+              <li><a href="#">Fresh Onion</a></li>
+              <li><a href="#">Papayaya & Crisps</a></li>
+              <li><a href="#">Oatmeal</a></li>
+              <li><a href="#">Fresh Bananas</a></li>
+            </ul>
+          </div>
+          <div class="main__container--right">
+            <div class="main__container--right--top">
+              <div class="main__container--right--top--serch">
+                <form action="#">
+                  <div class="serch__category">
+                    <b> All Categories</b>
+                    <span class="serch__icon"
+                      ><i class="fa-solid fa-chevron-down"></i
+                    ></span>
+                  </div>
+                  <input type="text" placeholder="What do you need?" />
+                  <button><a href="">SEARCH</a></button>
+                </form>
+              </div>
+  
+              <div class="main__container--right--top--number">
+                <div class="main__container--right--top--number--icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="main__container--right--top--number--text">
+                  <h5>+65 11.188.888</h5>
+                  <span>support 24/7 time</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tomato-back">
+        <ul>
+          <li><h3>Blog</h3></li>
+          <li class="tamato-link">
+           <a href="">Home</a>
+            <span>Block</span>
+          </li>
+        </ul>
+      </section>
+      <section class="serch">
+        <div class="serch__container">
+          <div class="serch__left">
+            <div class="serch__form">
+              <form action="">
+                <input type="text" placeholder="Search..." />
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              </form>
+            </div>
+            <div class="serch__categories">
+              <h3>Categories</h3>
+              <ul>
+                <li><a href="">All</a> </li>
+                <li><a href="">Beauty (20)</a> </li>
+                <li><a href="">Food (5)</a> </li>
+                <li><a href="">Life Style (9)</a> </li>
+                <li><a href="">Travel (10)</a></li>
+              </ul>
+            </div>
+            <div class="serch__recent">
+              <h3 class="serch--logo">Recent News</h3>
+              <ul>
+                <li>
+                  <a href="" class="serch--links">
+                    <div class="img__container">
+                      <img
+                        src="https://preview.colorlib.com/theme/ogani/img/blog/sidebar/sr-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="img__container--text">
+                      <h3>09 Kinds Of Vegetables 
+                      Protect The Liver
+                    </h3>
+                    <span>MAR 05, 2019</span>
+                    </div>
+                    
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="serch--links">
+                    <div class="img__container">
+                      <img
+                        src="https://preview.colorlib.com/theme/ogani/img/blog/sidebar/sr-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="img__container--text">
+                       <h3>Tips You To Balance
+                      Nutrition Meal Day
+                    </h3>
+                    <span>MAR 05, 2019</span>
+                    </div>
+                   
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="serch--links">
+                    <div class="img__container">
+                      <img
+                        src="https://preview.colorlib.com/theme/ogani/img/blog/sidebar/sr-3.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="img__text">
+                       <h3>4 Principles Help You Lose 
+                      Weight With Vegetables
+                    </h3>
+                    <span>MAR 05, 2019</span>
+                    </div>
+                   
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="serch__item">
+              <h3 >Search By</h3>
+              <ul>
+                <li><a href="#">Apple</a></li>
+                <li><a href="#">Beauty</a></li>
+                <li><a href="#">Vegetables</a></li>
+                <li><a href="#">Fruit</a></li>
+                <li><a href="#">Healthy Food</a></li>
+                <li><a href="#">Lifestyle</a></li>
+              </ul>
+            </div>
+          </div>
+       <div class="serch__right">
+              <div class="from-photo">
+                <div class="from-photo-img">
+                  <div class="from-photo-pic">
+                    <img src="https://preview.colorlib.com/theme/ogani/img/blog/blog-1.jpg" alt="">
+                  </div>
+                  <div class="from-photo-text">
+                    <ul>
+                      <li>
+                        <i class="fa fa-calendar-o"></i>
+                        May 4,2019
+                      </li>
+                      <li>
+                        <i class="fa fa-comment-o"></i>
+                        5
+                      </li>
+                    </ul>
+                    <h5>
+                      <a href="">6 ways to prepare breakfast for 30</a>
+                    </h5>
+                    <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                    <a class="liks--serch" href="">READ MORE <span><i class="fa-solid fa-right-long"></i></span></a>
+                  </div>
+                </div>
+                <div class="from-photo-img">
+                  <div class="from-photo-pic">
+                    <img src="https://preview.colorlib.com/theme/ogani/img/blog/blog-2.jpg" alt="">
+                  </div>
+                  <div class="from-photo-text">
+                    <ul>
+                      <li>
+                        <i class="fa fa-calendar-o"></i>
+                        May 4,2019
+                      </li>
+                      <li>
+                        <i class="fa fa-comment-o"></i>
+                        5
+                      </li>
+                    </ul>
+                    <h5>
+                      <a href="">Visit the clean farm in the US</a>
+                    </h5>
+                    <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                    <a  class="liks--serch"href="">READ MORE <span><i class="fa-solid fa-right-long"></i></span></a>
+                  </div>
+                </div>
+                <div class="from-photo-img">
+                  <div class="from-photo-pic">
+                    <img src="https://preview.colorlib.com/theme/ogani/img/blog/blog-3.jpg" alt="">
+                  </div>
+                  <div class="from-photo-text">
+                    <ul>
+                      <li>
+                        <i class="fa fa-calendar-o"></i>
+                        May 4,2019
+                      </li>
+                      <li>
+                        <i class="fa fa-comment-o"></i>
+                        5
+                      </li>
+                    </ul>
+                    <h5>
+                      <a href="">Visit the clean farm in the US</a>
+                    </h5>
+                    <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                    <a class="liks--serch" href="">READ MORE <span><i class="fa-solid fa-right-long"></i></span></a>
+                  </div>
+                </div>
+                <div class="from-photo-img">
+                    <div class="from-photo-pic">
+                      <img src="https://preview.colorlib.com/theme/ogani/img/blog/blog-4.jpg" alt="">
+                    </div>
+                    <div class="from-photo-text">
+                      <ul>
+                        <li>
+                          <i class="fa fa-calendar-o"></i>
+                          May 4,2019
+                        </li>
+                        <li>
+                          <i class="fa fa-comment-o"></i>
+                          5
+                        </li>
+                      </ul>
+                      <h5>
+                        <a href="">Cooking tips make cooking simple</a>
+                      </h5>
+                      <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                      <a class="liks--serch" href="">READ MORE <span><i class="fa-solid fa-right-long"></i></span></a>
+                    </div>
+                  </div>
+                  <div class="from-photo-img">
+                    <div class="from-photo-pic">
+                      <img src="https://preview.colorlib.com/theme/ogani/img/blog/blog-6.jpg" alt="">
+                    </div>
+                    <div class="from-photo-text">
+                      <ul>
+                        <li>
+                          <i class="fa fa-calendar-o"></i>
+                          May 4,2019
+                        </li>
+                        <li>
+                          <i class="fa fa-comment-o"></i>
+                          5
+                        </li>
+                      </ul>
+                      <h5>
+                        <a href="">6 ways to prepare breakfast for 30</a>
+                      </h5>
+                      <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                      <a class="liks--serch" href="">READ MORE <span><i class="fa-solid fa-right-long"></i></span></a>
+                    </div>
+                  </div>
+                  <div class="from-photo-img">
+                    <div class="from-photo-pic">
+                      <img src="https://preview.colorlib.com/theme/ogani/img/blog/blog-3.jpg" alt="">
+                    </div>
+                    <div class="from-photo-text">
+                      <ul>
+                        <li>
+                          <i class="fa fa-calendar-o"></i>
+                          May 4,2019
+                        </li>
+                        <li>
+                          <i class="fa fa-comment-o"></i>
+                          5
+                        </li>
+                      </ul>
+                      <h5>
+                        <a href="">Visit the clean farm in the US</a>
+                      </h5>
+                      <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                      <a class="liks--serch" href="">READ MORE <span><i class="fa-solid fa-right-long"></i></span></a>
+                    </div>
+                  </div>
+              </div>
+              <div class="pagination-button">
+                <a href="">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href=""><i class="fa fa-long-arrow-right"></i></a>
+              </div>
+       </div>
+        </div>
+      </section>
+        <!-- Start footer -->
+        <footer class="footer">
+            <div class="footer__container">
+              <div class="footer__logo">
+                <div class="footer__logo-name">
+                    <img src="https://preview.colorlib.com/theme/ogani/img/logo.png" alt="">
+                </div>
+                <ul>
+                  <li>Address: 60-49 Road 11378 <br> New York</li>
+                  <li>Phone: +65 11.188.888</li>
+                  <li>Email: hello@colorlib.com</li>
+                </ul>
+                
+              </div>
+              <div class="footer__widget">
+                <h3>Useful Links</h3>
+                <div class="footer__widget--ul">
+                  <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">About Our Shop</a></li>
+                    <li><a href="">Secure Shopping</a></li>
+                    <li><a href="">Delivery infomation</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Our Sitemap</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="">Who We Are</a></li>
+                    <li><a href="">Our Services</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Innovation</a></li>
+                    <li><a href="">Testimonials</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__right">
+                <h3>Join Our Newsletter Now</h3>
+                <p>Get E-mail updates about our latest shop and <br> special offers.</p>
+                <form >
+                  <input type="text" placeholder="Enter your mail">
+                  <button type="submit">Subscribe</button>
+                </form>
+                <div class="footer__right--social">
+                  <a href="">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-pinterest"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="go--top hidden"><i class="fa-solid fa-apple-whole"></i></div>
+      
+          </footer>
+          <!-- End footer -->
+          <script>
+            let loader = document.querySelector('.loader')
+            window.addEventListener("load", () => {
+          loader.style.display = 'none'
+        });
+          </script>
+      <script src="./Block.js"></script>
+</body>
+</html>
